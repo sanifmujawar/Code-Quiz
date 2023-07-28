@@ -31,7 +31,7 @@ button:hover {
 }
 
 .choices button {
-  display: block;
+  /* display: block; */
 }
 
 input[type="text"] {
