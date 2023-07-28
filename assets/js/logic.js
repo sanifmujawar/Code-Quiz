@@ -16,14 +16,28 @@ let orderList = document.createElement("ol");
 divChoices.appendChild(orderList);
 let ol = document.querySelector("ol");
 
+// Sound Functions
+function playCorrectSound() {
+  const correctSound = document.getElementById("correctSound");
+  correctSound.play();
+}
+
+function playIncorrectSound() {
+  const incorrectSound = document.getElementById("incorrectSound");
+  incorrectSound.play();
+}
+// End of Sound Functions
+
 ol.addEventListener("click", function (event) {
   let element = event.target;
   if (element.matches("button")) {
     let state = element.getAttribute("data-state");
     if (state == questions[questionIndex].correct) {
       message("Correct!");
+      playCorrectSound(); // Call the function to play the correct sound
     } else {
       message("Wrong!");
+      playIncorrectSound(); // Call the function to play the incorrect sound
       countdownTimer -= 10;
       console.log(countdownTimer);
     }
@@ -33,7 +47,6 @@ ol.addEventListener("click", function (event) {
   }
 });
 
-function startQuiz() {}
 function message(string) {
   console.log(string);
   let p1 = document.createElement("p");
@@ -72,10 +85,6 @@ function startCountdown() {
   }, 1000);
 }
 
-function stopCountdown() {
-  // clearInterval(intervalId);
-}
-
 function getQuestion(index) {
   if (index < questions.length) {
     h2Question.textContent = questions[index].question;
@@ -97,8 +106,6 @@ function getQuestion(index) {
 
 buttonStart.addEventListener("click", function () {
   startCountdown();
-  // divStartScreen.classList.remove("start");
-  // divStartScreen.classList.add("hide");
   divStartScreen.setAttribute("class", "hide");
   divQuestions.setAttribute("class", "");
   getQuestion(questionIndex);
@@ -106,7 +113,7 @@ buttonStart.addEventListener("click", function () {
 
 let highscore = JSON.parse(localStorage.getItem("scores")) || [];
 buttonSubmit.addEventListener("click", function (event) {
-  event.preventDefault;
+  event.preventDefault();
   let initialStore = inputInitials.value;
   let currentScore = {
     initial: initialStore,
@@ -115,7 +122,6 @@ buttonSubmit.addEventListener("click", function (event) {
   highscore.push(currentScore);
   console.log(currentScore);
   highscore.sort(function (a, b) {
-    // return a.score + b.score;
     if (a.score > b.score) {
       return -1;
     }
