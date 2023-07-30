@@ -1,88 +1,73 @@
-# Module 6 Challenge Web APIs: Code Quiz
+# 🏆 Code Quiz 🏆
 
-## Your Task
+## Overview
 
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+Welcome to the Code Quiz project! 🚀 In this challenge, you will build a timed coding quiz with multiple-choice questions. The quiz will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
-
+As a coding boot camp student, this quiz will allow you to test your JavaScript fundamentals knowledge and compare your progress with your peers. The quiz will have a clean, polished, and responsive user interface, making it an excellent tool to prepare for coding assessments and interview processes.
 
 ## User Story
 
 ```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+AS a coding enthusiast
+I WANT to challenge my JavaScript knowledge with a fun and interactive quiz
+SO THAT I can reinforce my learning and improve my coding skills
 ```
 
-## Acceptance Criteria
+## Instructions 📝
 
-Create a code quiz that contains the following requirements:
+To take the Code Quiz:
 
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
+1. Open the [Code Quiz](https://sanifmujawar.github.io/Code-Quiz/) in your web browser. 🌐
+2. Click the "Start Quiz" button to begin the quiz. ⏱️
+3. A question will appear with multiple-choice options.
+4. Select the correct answer by clicking on the corresponding button.
+5. If your answer is correct, the next question will appear automatically. If your answer is incorrect, time will be subtracted from the clock. ❌
+6. The quiz will end when you have answered all the questions or when the timer reaches 0. ⏰
+7. At the end of the quiz, your score will be displayed, and you will have the option to save your initials and score to the high scores list. 💯
 
-* The quiz should end when all questions are answered or the timer reaches 0.
+Remember, the faster you answer correctly, the higher your score will be!
 
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-  
-## Mock-Up
+## Mock-Up 📸
 
-The following animation demonstrates the application functionality:
+The following animation demonstrates the functionality of the Code Quiz:
 
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their intials, then clears their intials and starts over.](./assets/08-web-apis-challenge-demo.gif)
+![Code Quiz Animation](./demo.gif)
 
-## Grading Requirements
+## Quiz Features 🔥
 
-This challenge is graded based on the following criteria: 
+- 🌟 Thrilling Timer: Experience the adrenaline rush as you race against the clock to answer the questions.
+- 🎯 Multiple-Choice Madness: Put your JavaScript knowledge to the test with a series of mind-bending questions.
+- 🏅 Hall of Fame: Earn your spot in the prestigious high scores list and showcase your coding prowess to the world.
+- 🌈 Responsive Design: Enjoy a seamless and visually stunning quiz experience across all devices.
 
-### Technical Acceptance Criteria: 40%
+## Technical Acceptance Criteria 🛠️
 
-* Satisfies all of the above acceptance criteria.
+- The application should present multiple-choice questions and allow users to select their answers. ✔️
+- The quiz should have a timer that starts when the user clicks the "Start Quiz" button. ✔️
+- If a user selects the correct answer, the quiz should progress to the next question. ✔️
+- If a user selects the wrong answer, time should be deducted from the timer. ✔️
+- The quiz should end when all questions are answered or when the timer reaches 0. ✔️
+- After the quiz ends, the user's score should be displayed, and they should be able to save their initials and score to the high scores list. ✔️
 
-### Deployment: 32%
+## Deployment 🚀
 
-* Application deployed at live URL.
+The Code Quiz is deployed and accessible via the following URL: [Code Quiz](https://sanifmujawar.github.io/Code-Quiz/). 🌐
 
-* Application loads with no errors.
+The project's source code is available on GitHub: [GitHub Repository](https://github.com/sanifmujawar/Code-Quiz). 💻
 
-* Application GitHub URL submitted.
+## Application Quality 🌟
 
-* GitHub repository that contains application code.
+The Code Quiz provides an intuitive user experience, making it easy to navigate and understand. The user interface style is clean, polished, and resembles the mock-up functionality provided in the challenge instructions. ✨
 
-### Application Quality: 15%
+## Repository Quality 📚
 
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+The GitHub repository for this project follows best practices for file structure, naming conventions, class/id naming, indentation, and includes descriptive commit messages. It also contains a quality README file with a project description, a mock-up animation, and a link to the deployed application. 📝
 
 ---
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+© 2023 [Sanif Mujawar](https://github.com/sanifmujawar) Confidential and Proprietary. All Rights Reserved.
+
+🏆 Note: You may add additional sections or details to the README depending on the project's requirements and complexity. 📋
+
+Please write in English language.
