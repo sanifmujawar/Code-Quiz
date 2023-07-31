@@ -1,6 +1,9 @@
 body {
-  font-family: Arial;
+  font-family: Rob;
   font-size: 120%;
+  background-image: url("../code-quiz.png");
+  background-size: cover; /* or 'contain', '100% 100%', etc. */
+  background-repeat: no-repeat; /* to prevent repeating the image */
 }
 
 a {
@@ -15,19 +18,19 @@ a:hover {
 
 button {
   display: inline-block;
-  margin: 5px;
+  margin: 10px; /* Increased margin for slightly more spacing */
   cursor: pointer;
-  font-size: 100%;
-  background-color: #563d7c;
+  font-size: 2rem; /* Reduced font size to 2rem */
+  background-color: #4ECCA3; /* Match button color with h1 color */
   border-radius: 5px;
-  padding: 2px 10px;
+  padding: 10px 20px; /* Increased padding for a larger button */
   color: white;
   border: 0;
   transition: background-color 0.1s;
 }
 
 button:hover {
-  background-color: #8570a5;
+  background-color: #2E8473; /* Darker color on hover */
 }
 
 .choices button {
@@ -47,10 +50,7 @@ ol {
 li {
   padding: 5px;
   list-style: decimal inside none;
-}
-
-li:nth-child(odd) {
-  background-color: #f3edfc;
+  color: #ff0000; /* Red text color for 'li' elements */
 }
 
 .wrapper {
@@ -85,4 +85,35 @@ li:nth-child(odd) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+  margin: 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 3px 0 #232931;
+  font-size: 4rem;
+  color: #4ECCA3;
+}
+
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
 }
