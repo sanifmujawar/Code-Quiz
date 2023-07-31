@@ -32,7 +32,7 @@ Remember, the faster you answer correctly, the higher your score will be!
 
 The following animation demonstrates the functionality of the Code Quiz:
 
-![Code Quiz Animation](./demo.gif)
+![Code Quiz Animation](./assets/demo.gif)
 
 ## Quiz Features 🔥
 
